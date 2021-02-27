@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Form } from "semantic-ui-react";
 
-function PokemonForm() {
+function PokemonForm({pokemon, setPokemon}) {
+
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/pokemon",{
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"},
+  //       body: JSON.stringify()
+  //   })
+  //    .then(response => response.json())
+  //    .then(updatePokemon)
+  // }, [pokemon])
+
   return (
     <div>
       <h3>Add a Pokemon!</h3>
